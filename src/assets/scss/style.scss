@@ -1,0 +1,180 @@
+//variables
+$darkred:#981118;
+// Bootstrap scss
+@import "others/bootstrap/bootstrap";
+// button scss
+@import "others/buttons";
+//form-elements
+@import "others/form-elements";
+
+/* Common */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  width: 100%;
+  height: 40px;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  p {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.main_container {
+  min-height: 100vh;
+  background-color: #52d3aa;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa));
+  background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+  background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+  .mid-block {
+    padding: 80px 0;
+    .navbar {
+      border: 0;
+    }
+  }
+}
+
+h1,
+h2 {
+  margin-top: 10px;
+  font-size: 38px;
+  font-weight: 100;
+  color: #555;
+  line-height: 50px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #555;
+  line-height: 30px;
+}
+
+.session-block {
+  font-family: 'Roboto', sans-serif;
+  a {
+    width: 100%;
+    min-height: 50px;
+    display: inline-block;
+    font-size: 18px;
+    color: #46acd3;
+    .well {
+      min-height: 250px;
+      padding: 20px 20px 20px 30px;
+      display: table;
+      width: 100%;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+      img {
+        max-height: 205px;
+        margin: 0 auto;
+      }
+      .col-sm-6 {
+        &.text-left {
+          width: 100%;
+        }
+        &.img-block {
+          display: table-cell;
+          vertical-align: middle;
+          float: none;
+        }
+      }
+    }
+  }
+  .yoga-title {
+    font-weight: 300;
+    color: #7b7b7b;
+  }
+  .yoga-desc {
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+.detail-block {
+  .well {
+    background-color: #fff;
+  }
+  ol {
+    width: 260px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .section-blocks {
+    margin-bottom: 20px;
+    label,
+    p {
+      margin-bottom: 0;
+    }
+    &.steps-block {
+      .steps-container {
+        border-top: 1px solid rgba(68, 165, 218, 0.2);
+        margin: 10px 0;
+        display: table;
+        .steps {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+          border: 1px solid rgba(68, 165, 218, 0.2);
+          border-top: 0px;
+          background-color: rgba(67, 164, 217, 0.6);
+          &:nth-child(even) {
+            background-color: rgba(68, 165, 218, 0.2);
+          }
+          .steps-img {
+            max-height: 200px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .biopic {
+    margin: 10px 0;
+  }
+  .benefit-tags-block {
+    span.label.label-info {
+      margin-right: 10px;
+      background-color: #3f96e9;
+      font-weight: normal;
+      display: inline-block;
+      span.glyphicon.glyphicon-tag {
+        margin-left: 5px;
+      }
+    }
+  }
+  ul {
+    padding: 0 20px;
+  }
+}
+
+.html_p {
+  margin-bottom: 5px;
+}
+
+.home-block {
+  h1 {
+    font-size: 80px;
+    margin-top: 30vh;
+    color: #fff;
+    line-height: 70px;
+  }
+}
+
+.biopic {
+  max-height: 250px;
+}
+
+// media queries scss
+@import "others/media_queries";
